@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="joy-common" />
+        <module name="joy-bean" />
+        <module name="joy-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="joy-api" target="1.8" />
+      <module name="joy-bean" target="1.8" />
+      <module name="joy-common" target="1.8" />
+      <module name="joy-data" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="joy-api" options="-parameters" />
+      <module name="joy-bean" options="-parameters" />
+      <module name="joy-common" options="-parameters" />
+      <module name="joy-data" options="-parameters" />
+    </option>
+  </component>
+</project>
